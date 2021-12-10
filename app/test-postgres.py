@@ -5,13 +5,18 @@
 from psycopg2 import connect
 
 table_name = "some_table"
+db_name = 'database'
+db_user = 'username'
+db_pass = 'secret'
+db_host = 'db'
+db_port = '5432'
 
 # declare connection instance
 conn = connect(
-    dbname = "some_db",
-    user = "objectrocket",
-    host = "172.28.1.4",
-    password = "1234"
+    dbname = db_name,
+    user = db_user,
+    host = db_host,
+    password = db_pass
 )
 
 # declare a cursor object from the connection
